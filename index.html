@@ -4,16 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
-  <title>Idian Election</title>
-  <script src="./cash.js"></script>
+  <link rel="stylesheet" href="css/bulma-ext.css" />
+  <link rel="stylesheet" href="css/bulma.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Visualize Indian Election</title>
+  <script src=".scripts/cash.js"></script>
+  <script src=".scripts/bulma-ext.js"></script>
 </head>
 
 <body>
-  <div class="title">Indian Elections</div>
+  <div class="title">Indian Elections Visualization</div>
+  <button class="button is-link">Submit</button>
+  <div class="field">
+    Lok Sabha
+    <input id="switchRoundedDefault" type="checkbox" name="switchRoundedDefault" class="switch is-rounded"
+      checked="checked">
+    <label for="switchRoundedDefault"></label>
+    Rajya Sabha
+  </div>
+
+
   <svg class="svg-map" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg"
-    xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 0 750 850" version="1.1" preserveAspectRatio="xMidYMid meet">
+    xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 850"
+    version="1.1" preserveAspectRatio="xMidYMid meet">
     <defs>
       <amcharts:ammap projection="mercator" leftLongitude="68.186846" topLatitude="37.051825" rightLongitude="97.415614"
         bottomLatitude="6.754302"></amcharts:ammap>
